@@ -7,7 +7,7 @@ function Navbar() {
     <div>
       <div>
         <Link to="/">
-          <span class="material-symbols-outlined">phone_iphone</span>
+          <span className="material-symbols-outlined">phone_iphone</span>
         </Link>
       </div>
       <ul>
@@ -19,7 +19,7 @@ function Navbar() {
         </li>
         <li>
           <Link to="/shoppingcart">
-            <span class="material-symbols-outlined">shopping_cart</span>
+            <span className="material-symbols-outlined">shopping_cart</span>
             <span>1</span>
           </Link>
         </li>
