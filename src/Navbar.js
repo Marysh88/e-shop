@@ -4,13 +4,16 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
-    <div>
-      <div>
+
+          <div className="header-container">
+          <header className="header">
+      <div className="logo">
         <Link to="/">
-          <span className="material-symbols-outlined">phone_iphone</span>
+          <span class="material-symbols-outlined">shopping_bag</span>
         </Link>
+        <span className="logo-text">Mary e-shop</span>
       </div>
-      <ul>
+      <ul className="list">
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -24,7 +27,9 @@ function Navbar() {
           </Link>
         </li>
       </ul>
+    </header>
     </div>
+
   );
 }
 

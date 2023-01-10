@@ -1,32 +1,31 @@
 import React from "react";
-import './Products.css'
+import "./Products.css";
 
 const Products = (props) => {
   const products = props.products;
 
   console.log(products);
   return (
-    <div>
-      {
-      products.map((product) => {
-        return (
-          <div key={product.id} className="product">
-            <h1>{product.brand}</h1>
-            <h3>{product.title}</h3>
-            <p>{product.description}</p>
-            <h3>{product.stock}</h3>
-            <h3>{product.price}$</h3>
-            <div>
-              <span className="material-symbols-outlined">
-                add_shopping_cart
-              </span>
-              <span className="material-symbols-outlined">
-                remove_shopping_cart
-              </span>
+    
+    <div class='scroller'>
+         <div className="container">
+      {products.map((product) => {
+        if (product.id <= 5) {
+          return (
+            <div key={product.id} className="product">
+              <div className="div-img" >
+                <img src={product.thumbnail} alt={product.title} className="the-img"  />
+              </div>
+              <p className="div-price" >${product.price}</p>
+              <p className="div-title" >{product.title}</p>
+              <p className="div-description" >{product.description}</p>
+              <button className="div-button" >Add to cart</button>
+
             </div>
-          </div>
-        );
+          );
+        }
       })}
+    </div>
     </div>
   );
 };
