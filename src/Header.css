@@ -1,0 +1,45 @@
+.header {
+  position: sticky;
+  top: 0;
+  height: 80px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background-color: pink;
+  padding: 0 5%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: green;
+}
+
+.header-links {
+  display: flex;
+}
+.links {
+  text-decoration: none;
+  color: green;
+}
+
+.header-links ul {
+  display: flex;
+}
+
+.header-links ul li {
+  margin-right: 5%;
+  font-size: 1.25rem;
+}
+
+.Links:hover {
+  color: red;
+}
